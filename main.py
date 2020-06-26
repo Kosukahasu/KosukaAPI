@@ -17,6 +17,6 @@ def resource_not_found(e):
   return err.error(404, "not found!")
 
 if __name__ == "__main__":
-	print(f'''api made by simon the lazy guy''')
+	print(f'''KosukaAPI Written By Varkaria''')
 	# zzzzzzzzzz
 	app.run(port=2222, debug=True)
