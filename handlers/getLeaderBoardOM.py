@@ -8,13 +8,13 @@ from helpers import databaseConnector as db
 
 handler = Blueprint('getLeaderBoardOM', __name__)
 
-@handler.route("/kusoka/LeaderBoard")
+@handler.route("/kusoka/leaderboard/point")
 def getLeaderBoardOM():
 	db.SQLd.execute('''
 		SELECT
-		    id, team, point, win, lose, logo
-		FROM leaderboard
-		ORDER BY leaderboard.point DESC LIMIT 3
+		    id, team, logo, matcher, win, lose, point, pointwin, pointlose
+		FROM teams
+		ORDER BY  teams.point DESC, teams.pointwin DESC LIMIT 8
 	    ''')
 	data = db.SQLd.fetchall()
 

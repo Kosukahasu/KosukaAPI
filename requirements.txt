@@ -1,0 +1,8 @@
+flask
+mysql-connector
+colorama
+redis
+bcrypt
+discord-webhook
+pycountry
+timeago

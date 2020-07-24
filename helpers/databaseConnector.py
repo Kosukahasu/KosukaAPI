@@ -3,8 +3,8 @@ from mysql.connector import errorcode
 
 try:
 	cnx = mysql.connector.connect(
-		user       = "root",
-		password   = "",
+		user       = "OMTHPL",
+		password   = "CMf,N6-yskPWkE",
 		host       = "127.0.0.1",
 		database   = "omthpl2020",
 		autocommit = True)
