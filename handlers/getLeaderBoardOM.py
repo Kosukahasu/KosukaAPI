@@ -14,7 +14,7 @@ def getLeaderBoardOM():
 		SELECT
 		    id, team, logo, matcher, win, lose, point, pointwin, pointlose
 		FROM teams
-		ORDER BY  teams.point DESC, teams.pointwin DESC LIMIT 8
+		ORDER BY  teams.point DESC, teams.pointwin DESC, teams.pointlose ASC LIMIT 8
 	    ''')
 	data = db.SQLd.fetchall()
 
